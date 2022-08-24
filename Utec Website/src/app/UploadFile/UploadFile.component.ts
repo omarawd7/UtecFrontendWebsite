@@ -36,6 +36,8 @@ export class UploadFileComponent implements OnInit {
 
     this.bs.getH93().subscribe(d=>{
       this.blog=d,
+      console.log(this.blog);
+      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h93=this?.blog?.BlogContent;
      });
 

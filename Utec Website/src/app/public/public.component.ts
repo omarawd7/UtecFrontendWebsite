@@ -132,49 +132,67 @@ constructor( private router: Router,private pService :MyServiceService ,private 
   }
   showMessage(){
     this.pService.getmassage().subscribe(data=>{
-     this.msg=data    });
+     this.msg=data,
+     console.log(this.msg);
+    });
    }
 
    showBlog(){
 
     this.bs.getH1().subscribe(d=>{
      this.blog=d,
+     console.log(this.blog);
+     console.log('hello this is H1 content'+this?.blog?.BlogTitle);
     this.h1=this?.blog?.BlogContent;
     });
 
     this.bs.getH2().subscribe(d=>{
       this.blog=d,
+      console.log(this.blog);
+      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h2=this?.blog?.BlogContent;
      });
 
     this.bs.getH3().subscribe(d=>{
       this.blog=d,
+      console.log(this.blog);
+      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h3=this?.blog?.BlogContent;
      });
 
 
      this.bs.getH4().subscribe(d=>{
       this.blog=d,
+      console.log(this.blog);
+      console.log('hello this is H4 content'+this?.blog?.BlogContent);
      this.h4=this?.blog?.BlogContent;
      });
 
      this.bs.getH5().subscribe(d=>{
       this.blog=d,
+      console.log(this.blog);
+      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h5=this?.blog?.BlogContent;
      });
 
      this.bs.getH6().subscribe(d=>{
       this.blog=d,
+      console.log(this.blog);
+      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h6=this?.blog?.BlogContent;
      });
 
      this.bs.getH7().subscribe(d=>{
       this.blog=d,
+      console.log(this.blog);
+      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h7=this?.blog?.BlogContent;
      });
 
      this.bs.getH8().subscribe(d=>{
       this.blog=d,
+      console.log(this.blog);
+      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h8=this?.blog?.BlogContent;
      });
 

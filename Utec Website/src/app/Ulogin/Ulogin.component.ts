@@ -49,6 +49,7 @@ export class UloginComponent implements OnInit {
    this.shared.currentMessage.subscribe((msg: string) => this.message = msg);
    this.username = localStorage.getItem("CurrentUsername");
    if(this.username){
+
     this.router.navigate(['/secure'])  .then(() => {
       window.location.reload();
     });
@@ -83,39 +84,54 @@ this.showBlog();
   showBlog(){
   this.bs.getH77().subscribe(d=>{
     this.blog=d,
+    console.log(this.blog);
+    console.log('hello this is H1 content'+this?.blog?.BlogTitle);
    this.h77=this?.blog?.BlogContent;
    });
 
    this.bs.getH78().subscribe(d=>{
     this.blog=d,
+    console.log(this.blog);
+    console.log('hello this is H1 content'+this?.blog?.BlogTitle);
    this.h78=this?.blog?.BlogContent;
    });
 
    this.bs.getH79().subscribe(d=>{
     this.blog=d,
+    console.log(this.blog);
+    console.log('hello this is H1 content'+this?.blog?.BlogTitle);
    this.h79=this?.blog?.BlogContent;
    });
    this.bs.getH80().subscribe(d=>{
     this.blog=d,
+    console.log(this.blog);
+    console.log('hello this is H1 content'+this?.blog?.BlogTitle);
    this.h80=this?.blog?.BlogContent;
    });
     this.bs.getH81().subscribe(d=>{
     this.blog=d,
+    console.log(this.blog);
+    console.log('hello this is H1 content'+this?.blog?.BlogTitle);
    this.h81=this?.blog?.BlogContent;
    });
 
    this.bs.getH82().subscribe(d=>{
     this.blog=d,
+    console.log(this.blog);
+    console.log('hello this is H1 content'+this?.blog?.BlogTitle);
    this.h82=this?.blog?.BlogContent;
    });
 
    this.bs.getH83().subscribe(d=>{
     this.blog=d,
+    console.log(this.blog);
+    console.log('hello this is H1 content'+this?.blog?.BlogTitle);
    this.h83=this?.blog?.BlogContent;
    });
    this.bs.getH84().subscribe(d=>{
     this.blog=d,
-
+    console.log(this.blog);
+    console.log('hello this is H1 content'+this?.blog?.BlogTitle);
    this.h84=this?.blog?.BlogContent;
    });
 

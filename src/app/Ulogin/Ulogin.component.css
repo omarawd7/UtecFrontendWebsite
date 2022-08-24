@@ -1,0 +1,336 @@
+@font-face{
+  font-family:UtecFont;
+  src:url(./../../assets/fonts/LoewNext-Regular.ttf)format('ttf');
+}
+@media only screen and (max-width: 2000px)  and (min-device-width: 768px){
+body  {
+    background: #0057B7;
+    font-family:UtecFont;
+    width: 100%;
+    position: flex;
+}
+html {
+  width: 100%;
+  font-family:UtecFont;
+
+}
+.logo1{
+  margin-left:9%;
+display: inline-block;
+vertical-align: middle;
+
+
+}
+.admin{
+  margin-left:60%;
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  /* or 38px */
+
+  font-family:UtecFont;
+
+  color: #FFFFFF;
+}
+.navP1{
+
+margin-top:20px;
+}
+#cont1{
+  background-color: #0057B7;
+  border-width: 0px;
+}
+#login{
+font-style: normal;
+font-weight: 500;
+font-size: 110px;
+line-height: 180px;
+/* or 164% */
+font-family:UtecFont;
+margin-right: 10%;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+}
+
+#username{
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 120%;
+/* or 38px */
+font-family:UtecFont;
+
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+#username input{
+  border:0;
+  border-bottom:1px solid white;
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:#fff;
+}
+#username input:focus{
+  border:none;
+  outline:none;
+  border-bottom:1px solid white;
+ }
+ #username input:focus ~ label,
+ #username input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+}
+#password input{
+  border:0;
+  border-bottom:1px solid white;
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:#fff;
+}
+#password input:focus{
+  border:none;
+  outline:none;
+  border-bottom:1px solid white;
+ }
+ #password input:focus ~ label,
+ #password input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#username1  {
+
+  margin-right: 43% ;
+}
+#typeEmailX{
+  margin-left:90px;
+}
+#typePasswordX{
+  margin-left:90px;
+}
+#password{
+  font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 120%;
+/* or 38px */
+
+color: #FFFFFF;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+#password1  {
+  margin-right: 43% ;
+  }
+#loginButton{
+  margin-right: 43% ;
+  background: #00B5E2;
+
+
+}
+#noAcc{
+  margin-right: 18% ;
+
+}
+}
+@media only screen and (max-width: 500px) {
+
+
+
+  body  {
+    background: #0057B7;
+    font-family:UtecFont;
+    width: 100%;
+    position: flex;
+}
+html {
+  width: 100%;
+  font-family:UtecFont;
+
+}
+.logo1{
+  margin-left:9%;
+display: inline-block;
+vertical-align: middle;
+
+
+}
+.admin{
+  margin-left:100%;
+  display: inline-block;
+  vertical-align: middle;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  margin-bottom: 10%;
+  /* or 38px */
+  display: none;
+  font-family:UtecFont;
+
+  color: #FFFFFF;
+}
+.navP1{
+
+margin-top:20px;
+}
+#cont1{
+  background-color: #0057B7;
+  border-width: 0px;
+}
+#login{
+font-style: normal;
+font-weight: 500;
+font-size:50px;
+line-height: 180px;
+/* or 164% */
+font-family:UtecFont;
+margin-right: 30%;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+}
+
+#username{
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 120%;
+/* or 38px */
+font-family:UtecFont;
+
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+#username input{
+  border:0;
+  border-bottom:1px solid white;
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:#fff;
+}
+#username input:focus{
+  border:none;
+  outline:none;
+  border-bottom:1px solid white;
+ }
+ #username input:focus ~ label,
+ #username input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+}
+#password input{
+  border:0;
+  border-bottom:1px solid white;
+  background:transparent;
+  width:100%;
+  padding:8px 0 5px 0;
+  font-size:16px;
+  color:#fff;
+}
+#password input:focus{
+  border:none;
+  outline:none;
+  border-bottom:1px solid white;
+ }
+ #password input:focus ~ label,
+ #password input:valid ~ label{
+	top:-12px;
+	font-size:12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#username1  {
+
+  margin-right: 53% ;
+  font-size:20px;
+}
+#typeEmailX{
+  margin-left:10px;
+}
+#typePasswordX{
+  margin-left:10px;
+}
+#password{
+  font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 120%;
+/* or 38px */
+
+color: #FFFFFF;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+#password1  {
+  margin-right: 53% ;
+  font-size:20px;
+  }
+#loginButton{
+  margin-right: 43% ;
+  background: #00B5E2;
+
+
+}
+#noAcc{
+  margin-right: 18% ;
+
+}
+
+
+
+
+
+
+}

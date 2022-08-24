@@ -1,0 +1,31 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@font-face{
+  font-family:UtecFont;
+  src:url(./../../assets/fonts/LoewNext-Regular.ttf)format('ttf');
+}
+body {
+  font-family: UtecFont;
+  background: #0057B7;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+
+}
+html {
+
+  width: 100%;
+}
+#access{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 110px;
+  line-height: 180px;
+  /* or 164% */
+
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+
+}

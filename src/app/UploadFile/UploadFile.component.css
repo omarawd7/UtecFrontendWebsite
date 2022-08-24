@@ -1,0 +1,32 @@
+
+@font-face {
+  font-family: UtecFont;
+  src: url(./../../assets/fonts/LoewNext-Regular.ttf)format('ttf');
+}
+body{
+
+
+  background-color:#0057B7 ;
+  font-family:UtecFont;
+
+
+
+}
+
+
+#quotations{
+  font-size: 40px;
+
+
+}
+.logo1{
+  margin-left:9%;
+display: inline-block;
+vertical-align: middle;
+
+
+}
+.navP1{
+
+  margin-top:20px;
+  }

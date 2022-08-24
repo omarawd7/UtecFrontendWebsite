@@ -1,0 +1,39 @@
+<diV class="navP1"><div class="logo1" >     <a href="/" ><img  src="../assets/utecLogin.png"></a></div>
+  <p class="admin">Admin Portal</p>
+  </diV>
+
+    <div class="col-12 col-md-8 col-lg-6 col-xl-6"  id="cont1">
+      <div class="card bg-dark text-white" id="cont1">
+        <div class="card-body p-5 text-center" id="cont1">
+
+          <div class="mb-md-5 mt-md-4 pb-5">
+
+            <h2  id="login">Login</h2>
+            <br>
+          <form [formGroup]="myform" (ngSubmit)="onSubmit()">
+            <div style="color:red"*ngIf="WrongPassOrUser==true">Wrong Username Or Password </div>
+            <div id="username">
+              <p id="username1">Username</p>
+              <input  id="typeEmailX"  formControlName="username">
+            <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 40px;"></div><div class="form-notch-trailing"></div></div></div>
+              <br> <br>
+            <div class="form-outline form-white mb-4" id="password">
+              <p id="password1">Password</p>
+              <input type="password" id="typePasswordX" class="form-control form-control-lg" formControlName="password">
+            <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 64px;"></div><div class="form-notch-trailing"></div></div></div>
+            <br> <br>
+
+
+            <button  class="btn btn-outline-light btn-lg px-5" id="loginButton" type="submit"  >Login</button>
+          </form>
+          <br> <br>
+          <div id="noAcc">
+            <p >Don't have an account?  <a href="/Rigester" class="text-white-50 fw-bold">Register Here </a></p>
+          </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+

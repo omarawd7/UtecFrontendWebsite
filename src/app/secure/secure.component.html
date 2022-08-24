@@ -1,0 +1,301 @@
+<div *ngIf="validate;">
+  <div>
+    <div class="topnav" id="navbar1" style=" background:transparent;      ">
+      <a style="margin-left:100px ;" href="/Ulogin" (click)="logout1()" style=" color:white ;">Logout</a>
+      <a href="/UploadFile" style=" color:white ;">Upload quotation</a>
+      <a href="/Products" style=" color:white ;">{{ h32 }}</a>
+      <a href="/OurStory" style=" color:white ;">{{ h31 }}</a>
+      <a style=" color:white ;">Welcome {{username}}</a>
+      <p><img class="logo" src="../assets/utec logo.png"></p>
+    </div>
+
+    <div class="wrapper" style="  position: sticky;">
+      <input type="checkbox" id="btn" hidden>
+      <label for="btn" class="menu-btn">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+      </label>
+      <nav id="sidebar">
+        <div class="title">
+          Utec
+        </div>
+        <ul class="list-items">
+          <li><a href="/"><i class="fas fa-home" style="text-align:left"></i>Welcome{{username}}</a></li>
+          <li><a href="/UploadFile" style=" color:white ;">Upload quotation</a></li>
+          <li><a href="/OurStory"><i class="fas fa-sliders-h"></i>{{ h31 }}</a></li>
+          <li><a href="/Products"><i class="fas fa-address-book"></i>{{ h32 }} </a></li>
+          <li><a href="/Ulogin" (click)="logout1()"><i class="fas fa-cog"></i>Logout</a></li>
+        </ul>
+      </nav>
+      <p (click)="homepage()"><img id="LM" src="../assets/utec logo.png"></p>
+    </div>
+
+    <section #message1 style=" margin-left: 5%;  margin-top:10%;">
+      <p class="heading-1" style="width:90% ">
+        {{ h1 }}
+      </p>
+      <p class="heading-2" style=" color:white ;width:90% ;">
+
+      </p>
+      <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    </section>
+  </div>
+  <div class="block1">
+
+    <section class="blok1" #message2>
+      <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+      <p class="heading-3">
+        {{ h3 }}
+      </p>
+      <p class="heading-4">
+      </p>
+
+    </section>
+    <p class="text1">
+      {{ h5 }}
+    </p>
+    <br>
+    <br>
+
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+  </div>
+
+  <div class="block2">
+    <section class="blok2" #message3>
+      <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+      <p class="heading-5">
+        {{ h6 }}
+      </p>
+      <p class="heading-6">
+
+      </p>
+      <p class="heading-7">
+
+      </p>
+      <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    </section>
+  </div>
+
+  <div class="block3">
+    <section class="blok3" #message4>
+      <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+      <p class="heading-9">
+        {{ h10 }}
+      </p>
+
+      <p class="heading-10">
+
+      </p>
+
+    </section>
+    <br>
+    <p class="text2">
+      {{h12}}
+    </p>
+    <br>
+    <br>
+
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+  </div>
+
+  <div class="block4">
+    <section class="blok4" #message5>
+      <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+      <p class="heading-11">
+        {{h13}}
+      </p>
+      <p class="heading-12">
+
+      </p>
+      <p class="heading-13">
+
+      </p>
+      <p class="heading-14">
+
+      </p>
+      <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
+    </section>
+  </div>
+
+  <div class="ind">
+    <br> <br> <br> <br> <br>
+    <div><img class="blue" src="../assets/blue.png"></div>
+    <br>
+    <p class="indP" style="margin-left:10% ;  max-width:80% ;  text-align: center;margin:center  ">
+      {{h17}}
+    </p>
+    <br> <br> <br> <br>
+    <p class="indH">
+      {{h18}}
+    </p>
+    <br> <br><br> <br>
+    <div style=" width:50% ;height:35%;margin-left:25%; ">
+      <ngb-carousel>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img src="../assets/industry.jpeg" style="width:100%" alt="Random first slide">
+          </div>
+          <div class="carousel-caption">
+            <h3>{{ h19 }}</h3>
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img src="../assets/infrastructure.jpg" alt="Random second slide" style="width:100%">
+          </div>
+          <div class="carousel-caption">
+            <h3 style="   text-transform: uppercase; "> {{ h20 }} </h3>
+
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img src="../assets/transport.jpg" alt="Random third slide" style="width:100%">
+          </div>
+          <div class="carousel-caption">
+            <h3 style="   text-transform: uppercase; ">{{ h21 }} </h3>
+
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img src="../assets/healthcare.jpg" alt="Random third slide" style="width:100%">
+          </div>
+          <div class="carousel-caption">
+            <h3 style="   text-transform: uppercase; "> {{ h22 }} </h3>
+
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img src="../assets/government.jpg" alt="Random third slide" style="width:100%">
+          </div>
+          <div class="carousel-caption">
+            <h3 style="   text-transform: uppercase; "> {{ h23 }} </h3>
+
+          </div>
+        </ng-template>
+
+
+
+      </ngb-carousel>
+    </div>
+    <br> <br> <br> <br>
+
+    <p class="find_more">{{ h24 }}</p>
+    <br><br><br><br>
+    <div style=" overflow: hidden;">
+      <video class="vid1" loop muted autoplay oncanplay="this.play()" onloadedmetadata="this.muted = true">
+        <source src="../assets/UTECBrandVideo.mp4" type="video/mp4">
+      </video>
+    </div>
+    <br><br><br><br>
+    <div class="aboutus" id="aboutUs1">
+      <p>
+        {{ h25 }}
+      </p>
+    </div>
+    <br><br>
+    <div class="aboutu">
+      <p style="margin-left:10% ;  max-width:80% ;  text-align: center;margin:center  ">
+        {{ h26 }}
+    </div>
+    <br><br>
+
+    <div class="img2">
+      <img src="../assets/img2.png">
+    </div>
+    <br><br>
+
+    <p class="p2" style="margin-left:10% ;  max-width:80% ;  text-align: center;margin:center  ">
+      {{ h27 }}
+    </p>
+    <br><br><br><br>
+    <p class="p3" style="margin-left:10% ;  max-width:80% ;  text-align: center;margin:center  ">
+      {{ h28 }}
+    </p>
+    <br><br><br><br>
+
+  </div>
+
+  <footer class="row row-cols-5 py-5 my-5 border-top" class="footer">
+    <div class="col">
+      <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+      <div><img class="footerImg" src="../assets/utec logo.png"></div>
+      <p class="phone">{{ h58 }}</p>
+      <p class="mail">{{ h59 }}</p>
+      <p class="address">{{ h60 }}</p>
+    </div>
+
+    <div class="col">
+
+    </div>
+
+    <div class="col" id="col1">
+      <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+      <a class="mb-3" id="story" href="/OurStory">{{ h61 }}</a>
+      <ul class="nav flex-column">
+        <a style="color: #4f4f4f;margin-top: 10px;">{{ h62 }}</a>
+        <a style="color: #4f4f4f;margin-top: 10px;">{{ h63 }}</a>
+        <a style="color: #4f4f4f;margin-top: 10px;">{{ h64 }}</a>
+        <a style="color: #4f4f4f;margin-top: 10px;">{{ h65 }}</a>
+      </ul>
+      <br>
+      <p class="copyR">{{ h66 }}</p>
+    </div>
+
+    <div class="col" id="services" id="col1">
+      <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+      <a class="mb-3" id="story">{{ h67 }}</a>
+      <ul class="nav flex-column">
+        <a style="color: #4f4f4f;margin-top: 10px;">{{ h68 }}</a>
+        <a style="color: #4f4f4f;margin-top: 10px;">{{ h69 }}</a>
+        <a style="color: #4f4f4f;margin-top: 10px;">{{ h70 }}</a>
+        <a style="color: #4f4f4f;margin-top: 10px;">{{ h71 }}</a>
+
+      </ul>
+    </div>
+
+    <div class="col" id="folowUs">
+      <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+      </a>
+      <a class="mb-3" id="story">{{ h72 }}</a>
+      <ul class="nav flex-column">
+        <a style="color: #4f4f4f; margin-top: 10px;">{{ h73 }}</a>
+        <a style="color: #4f4f4f;margin-top: 10px;">{{ h74 }}</a>
+        <a style="color: #4f4f4f;margin-top: 10px;">{{ h75 }}</a>
+        <a style="color: #4f4f4f;margin-top: 10px;">{{ h76 }}</a>
+
+      </ul>
+
+    </div>
+
+  </footer>
+
+</div>
+
+<div>
+  <div *ngIf="validate==false" class="w3-display-middle" style="margin-left:500px ; padding-top:300px ">
+    <h1 class="w3-jumbo w3-animate-top w3-center"><code style="color:red ;">Access Denied</code></h1>
+    <hr class="w3-border-white w3-animate-left" style="margin:auto;width:50%">
+    <h3 class="w3-center w3-animate-right" style="color:white ;">You dont have permission to access this .</h3>
+    <h3 class="w3-center w3-animate-zoom">🚫🚫🚫🚫</h3>
+    <h6 class="w3-center w3-animate-zoom" style="color:white ;">error code:403 forbidden</h6>
+    <a href="/" style=" color:white ;">Back Home</a>
+  </div>
+</div>

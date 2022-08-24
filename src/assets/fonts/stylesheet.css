@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'Loew Next';
+    src: url('LoewNext-Black.eot');
+    src: local('Loew Next Black'), local('LoewNext-Black'),
+        url('LoewNext-Black.eot?#iefix') format('embedded-opentype'),
+        url('LoewNext-Black.woff2') format('woff2'),
+        url('LoewNext-Black.woff') format('woff'),
+        url('LoewNext-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Loew Next';
+    src: url('LoewNext-BlackItalic.eot');
+    src: local('Loew Next Black Italic'), local('LoewNext-BlackItalic'),
+        url('LoewNext-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('LoewNext-BlackItalic.woff2') format('woff2'),
+        url('LoewNext-BlackItalic.woff') format('woff'),
+        url('LoewNext-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Loew Next';
+    src: url('LoewNext-BoldItalic.eot');
+    src: local('Loew Next Bold Italic'), local('LoewNext-BoldItalic'),
+        url('LoewNext-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('LoewNext-BoldItalic.woff2') format('woff2'),
+        url('LoewNext-BoldItalic.woff') format('woff'),
+        url('LoewNext-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Loew Next';
+    src: url('LoewNext-ThinItalic.eot');
+    src: local('Loew Next Thin Italic'), local('LoewNext-ThinItalic'),
+        url('LoewNext-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('LoewNext-ThinItalic.woff2') format('woff2'),
+        url('LoewNext-ThinItalic.woff') format('woff'),
+        url('LoewNext-ThinItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Loew Next';
+    src: url('LoewNext-Bold.eot');
+    src: local('Loew Next Bold'), local('LoewNext-Bold'),
+        url('LoewNext-Bold.eot?#iefix') format('embedded-opentype'),
+        url('LoewNext-Bold.woff2') format('woff2'),
+        url('LoewNext-Bold.woff') format('woff'),
+        url('LoewNext-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Loew Next';
+    src: url('LoewNext-Italic.eot');
+    src: local('Loew Next Italic'), local('LoewNext-Italic'),
+        url('LoewNext-Italic.eot?#iefix') format('embedded-opentype'),
+        url('LoewNext-Italic.woff2') format('woff2'),
+        url('LoewNext-Italic.woff') format('woff'),
+        url('LoewNext-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Loew Next';
+    src: url('LoewNext-LightItalic.eot');
+    src: local('Loew Next Light Italic'), local('LoewNext-LightItalic'),
+        url('LoewNext-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('LoewNext-LightItalic.woff2') format('woff2'),
+        url('LoewNext-LightItalic.woff') format('woff'),
+        url('LoewNext-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Loew Next';
+    src: url('LoewNext-ExtraBoldItalic.eot');
+    src: local('Loew Next ExtraBold Italic'), local('LoewNext-ExtraBoldItalic'),
+        url('LoewNext-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('LoewNext-ExtraBoldItalic.woff2') format('woff2'),
+        url('LoewNext-ExtraBoldItalic.woff') format('woff'),
+        url('LoewNext-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Loew Next';
+    src: url('LoewNext-MediumItalic.eot');
+    src: local('Loew Next Medium Italic'), local('LoewNext-MediumItalic'),
+        url('LoewNext-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('LoewNext-MediumItalic.woff2') format('woff2'),
+        url('LoewNext-MediumItalic.woff') format('woff'),
+        url('LoewNext-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Loew Next';
+    src: url('LoewNext-Medium.eot');
+    src: local('Loew Next Medium'), local('LoewNext-Medium'),
+        url('LoewNext-Medium.eot?#iefix') format('embedded-opentype'),
+        url('LoewNext-Medium.woff2') format('woff2'),
+        url('LoewNext-Medium.woff') format('woff'),
+        url('LoewNext-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Loew Next';
+    src: url('LoewNext-Heavy.eot');
+    src: local('Loew Next Heavy'), local('LoewNext-Heavy'),
+        url('LoewNext-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('LoewNext-Heavy.woff2') format('woff2'),
+        url('LoewNext-Heavy.woff') format('woff'),
+        url('LoewNext-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Loew Next';
+    src: url('LoewNext-Light.eot');
+    src: local('Loew Next Light'), local('LoewNext-Light'),
+        url('LoewNext-Light.eot?#iefix') format('embedded-opentype'),
+        url('LoewNext-Light.woff2') format('woff2'),
+        url('LoewNext-Light.woff') format('woff'),
+        url('LoewNext-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Loew Next';
+    src: url('LoewNext-Thin.eot');
+    src: local('Loew Next Thin'), local('LoewNext-Thin'),
+        url('LoewNext-Thin.eot?#iefix') format('embedded-opentype'),
+        url('LoewNext-Thin.woff2') format('woff2'),
+        url('LoewNext-Thin.woff') format('woff'),
+        url('LoewNext-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Loew Next';
+    src: url('LoewNext-HeavyItalic.eot');
+    src: local('Loew Next Heavy Italic'), local('LoewNext-HeavyItalic'),
+        url('LoewNext-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+        url('LoewNext-HeavyItalic.woff2') format('woff2'),
+        url('LoewNext-HeavyItalic.woff') format('woff'),
+        url('LoewNext-HeavyItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Loew Next';
+    src: url('LoewNext-ExtraBold.eot');
+    src: local('Loew Next ExtraBold'), local('LoewNext-ExtraBold'),
+        url('LoewNext-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('LoewNext-ExtraBold.woff2') format('woff2'),
+        url('LoewNext-ExtraBold.woff') format('woff'),
+        url('LoewNext-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Loew Next';
+    src: url('LoewNext-Regular.eot');
+    src: local('Loew Next Regular'), local('LoewNext-Regular'),
+        url('LoewNext-Regular.eot?#iefix') format('embedded-opentype'),
+        url('LoewNext-Regular.woff2') format('woff2'),
+        url('LoewNext-Regular.woff') format('woff'),
+        url('LoewNext-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

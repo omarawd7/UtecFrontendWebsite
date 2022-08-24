@@ -1,0 +1,39 @@
+
+<diV class="navP1"><div class="logo1"><a href="/" ><img class="logo1"  src="../assets/utec logo.png"></a></div>
+  <p class="admin">{{ h85 }}</p>
+  </diV>
+
+  <div class="col-12 col-md-8 col-lg-6 col-xl-6"id="cont1">
+    <div class="card bg-dark text-white" id="cont2">
+      <div class="card-body p-5 text-center"id="cont3">
+
+        <div class="mb-md-5 mt-md-4 pb-5 ">
+
+          <h2 id="login">{{ h92 }}</h2>
+          <div style="color:red"*ngIf="missing==true">{{ h86 }}</div>
+        <form [formGroup]="myform" (ngSubmit)=" Register()">
+          <br><br>
+          <div id="username">
+            <p id="username1">{{ h87 }} </p>
+            <input  id="typeEmailX"  formControlName="username">
+          <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 64px;"></div><div class="form-notch-trailing"></div></div></div>
+          <br><br>
+          <div class="form-outline form-white mb-4" id="password">
+            <p id="password1">{{ h88 }}</p>
+            <input type="Email" id="typePasswordX" class="form-control form-control-lg" formControlName="password">
+          <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div><div class="form-notch-middle" style="width: 64px;"></div><div class="form-notch-trailing"></div></div></div>
+
+          <br><br>
+
+          <button  class="btn btn-outline-light btn-lg px-5" type="submit" id="loginButton"   > {{ h89 }}</button>
+        </form>
+        <br>
+        <br><br>
+        <div id="noAcc">
+          <p >{{ h90 }}  <a id="LoginHere" href="/Ulogin" >{{ h91 }} </a></p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+

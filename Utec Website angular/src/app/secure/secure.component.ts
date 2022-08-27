@@ -9,6 +9,8 @@ import { HttpClient ,HttpEventType } from '@angular/common/http';
 import {gsap} from  'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import { BlogService } from '../Blog.service';
+import { CookieService } from 'ngx-cookie-service';
+
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -28,6 +30,9 @@ export class SecureComponent implements OnInit {
   public  pass1!:string;
   public username!:any;
   public usermail!:any;
+  public user!:any;
+  private token: any;
+
   public c2!: SecureComponent;
   validate!: boolean;
   data:any;
@@ -37,7 +42,7 @@ export class SecureComponent implements OnInit {
   uploaded: boolean = false;
   startUpload: boolean = false;
   progress:any;
-  h1:any;
+  h1:any;//content of the website h stands for header
   h2:any;
   h3:any;
   h4:any;
@@ -101,22 +106,36 @@ export class SecureComponent implements OnInit {
   @ViewChild('message3', { static: true }) message3!: ElementRef<HTMLDivElement>;
   @ViewChild('message4', { static: true }) message4!: ElementRef<HTMLDivElement>;
   @ViewChild('message5', { static: true }) message5!: ElementRef<HTMLDivElement>;
-  constructor(private authService:AuthService ,public shared : SharedService ,private bs :BlogService, private router: Router,private http:HttpClient,@Inject(DOCUMENT) private document :Document ) {
+  constructor(private authService:AuthService ,public shared : SharedService ,private bs :BlogService, private router: Router,private http:HttpClient,@Inject(DOCUMENT) private document :Document ,public cookie: CookieService ) {
 
   }
 
   ngOnInit(): void {
     this.validate=true;
-    this.username = localStorage.getItem("CurrentUsername");
+    this.user=localStorage.getItem("CurrentUser");
+    this.user=JSON.parse(this.user);
+    this.token=this.cookie.get('token');
+
     if (!localStorage.getItem('foo')) {
       localStorage.setItem('foo', 'no reload')
       location.reload()
     } else {
       localStorage.removeItem('foo')
     }
-    if(this.username){
+    if(this.user){ //checking  authority
+
+     if( this.authService.checkAuthority(this.user.token)){
       this.validate=true;
-    }else{
+     }
+     else{
+      this.validate=false;
+      this.router.navigate(['/AccessDenied'])  .then(() => {
+        window.location.reload();
+      });
+     }
+
+
+    }else{ //if user is did not login
       this.validate=false;
       this.router.navigate(['/AccessDenied'])  .then(() => {
         window.location.reload();
@@ -132,7 +151,7 @@ export class SecureComponent implements OnInit {
    this.showBlog();
   }
   showBlog(){
-
+//content of the website h stands for header
     this.bs.getH1().subscribe(d=>{
      this.blog=d,
      console.log(this.blog);

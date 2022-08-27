@@ -6,20 +6,18 @@ const httpOptions={
     'Content-Type':'application/json'
   })
 };
-
 @Injectable({
   providedIn: 'root'
 })
-export class UploadFileService {
+export class RigesterService {
 
-  api_url='https://utecweb.herokuapp.com/public/UF/';
+  api_url='http://localhost:8000/ ';
   constructor(private http:HttpClient) {}
-  UploadaFile(CompanyName: string, File:any){
-    return this.http.post<any>(this.api_url,
-       {CompanyName ,File }, httpOptions).pipe(
+
+  Rigester(CompanyName: string,Email:string){
+    return this.http.post<any>('http://localhost:8000/public/RR/',
+       {CompanyName ,Email }, httpOptions).pipe(
         );
     }
-
-
 
 }

@@ -11,7 +11,6 @@ import { RigesterService } from '../Rigester.service';
   styleUrls: ['./Rigester.component.css'],  encapsulation: ViewEncapsulation.None,
 })
 export class RigesterComponent implements OnInit {
-
   myform!: FormGroup;
   rl!: any ;
   check!: boolean ;
@@ -55,7 +54,7 @@ export class RigesterComponent implements OnInit {
  this.rig.Rigester(this.f['username'].value, this.f['password'].value).subscribe(d=>{
   alert("Registration Request Successful ,We've received your registration request and are processing your application. You will receive an email with your login details once your registration is approved.Thank you for your patience  ");
     this.router.navigateByUrl("");
-  }       ,
+  },
   (error:any)=>{console.log(error); if(error.status==400){ this.missing=true;} } );
 
  }
@@ -63,60 +62,42 @@ export class RigesterComponent implements OnInit {
  showBlog(){
   this.bs.getH85().subscribe(d=>{
     this.blog=d,
-    console.log(this.blog);
-    console.log('hello this is H1 content'+this?.blog?.BlogTitle);
    this.h85=this?.blog?.BlogContent;
    });
    this.bs.getH86().subscribe(d=>{
     this.blog=d,
-    console.log(this.blog);
-    console.log('hello this is H1 content'+this?.blog?.BlogTitle);
    this.h86=this?.blog?.BlogContent;
    });
    this.bs.getH87().subscribe(d=>{
     this.blog=d,
-    console.log(this.blog);
-    console.log('hello this is H1 content'+this?.blog?.BlogTitle);
    this.h87=this?.blog?.BlogContent;
    });
    this.bs.getH88().subscribe(d=>{
     this.blog=d,
-    console.log(this.blog);
-    console.log('hello this is H1 content'+this?.blog?.BlogTitle);
    this.h88=this?.blog?.BlogContent;
    });
 
    this.bs.getH89().subscribe(d=>{
     this.blog=d,
-    console.log(this.blog);
-    console.log('hello this is H1 content'+this?.blog?.BlogTitle);
    this.h89=this?.blog?.BlogContent;
    });
 
    this.bs.getH90().subscribe(d=>{
     this.blog=d,
-    console.log(this.blog);
-    console.log('hello this is H1 content'+this?.blog?.BlogTitle);
    this.h90=this?.blog?.BlogContent;
    });
 
    this.bs.getH91().subscribe(d=>{
     this.blog=d,
-    console.log(this.blog);
-    console.log('hello this is H1 content'+this?.blog?.BlogTitle);
    this.h91=this?.blog?.BlogContent;
    });
    this.bs.getH92().subscribe(d=>{
     this.blog=d,
-    console.log(this.blog);
-    console.log('hello this is H1 content'+this?.blog?.BlogTitle);
    this.h92=this?.blog?.BlogContent;
    });
 
    this.bs.getH93().subscribe(d=>{
     this.blog=d,
-    console.log(this.blog);
-    console.log('hello this is H1 content'+this?.blog?.BlogTitle);
    this.h93=this?.blog?.BlogContent;
    });
   }

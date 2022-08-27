@@ -13,7 +13,7 @@ export class OurStoryComponent implements OnInit {
   username!: string | null;
   blog:any;
   btitle:any;
-  h1:any;
+  h1:any;//content of the website h stands for header
   h2:any;
   h3:any;
   h4:any;
@@ -86,12 +86,16 @@ export class OurStoryComponent implements OnInit {
   h78:any;
   h79:any;
   h80:any;
+  user!: any ;
 
   constructor(private router: Router,private authService:AuthService,private bs :BlogService ,) { }
 
   ngOnInit() {
     this.validate=false;
-    this.username = localStorage.getItem("CurrentUsername");
+    this.user=localStorage.getItem("CurrentUser");
+    this.user=JSON.parse(this.user);
+
+    this.username=  this.user.username;
     if(this.username){
       this.validate=true;
     }else{
@@ -114,7 +118,7 @@ export class OurStoryComponent implements OnInit {
     this.authService.logout();
   }
   showBlog(){
-
+//content of the website h stands for header
      this.bs.getH29().subscribe(d=>{
       this.blog=d,
       console.log(this.blog);

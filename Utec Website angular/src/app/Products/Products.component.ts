@@ -11,7 +11,7 @@ import { BlogService } from '../Blog.service';
 export class ProductsComponent implements OnInit {
   validate!: boolean;
   username!: string | null;
-  blog:any;
+  blog:any;//content of the website h stands for header
   btitle:any;
   h1:any;
   h2:any;
@@ -78,16 +78,16 @@ export class ProductsComponent implements OnInit {
   h78:any;
   h79:any;
   h80:any;
-
-
-
+  user: any | null;
 
 
   constructor(private router: Router,private authService:AuthService,private bs :BlogService) { }
   ngOnInit() {
     this.validate=false;
-    this.username = localStorage.getItem("CurrentUsername");
-    if(this.username){
+    this.user=localStorage.getItem("CurrentUser");
+    this.user=JSON.parse(this.user);
+
+    this.username=  this.user.username;    if(this.username){
       this.validate=true;
     }else{
       this.validate=false;
@@ -102,7 +102,7 @@ export class ProductsComponent implements OnInit {
   }
   showBlog(){
 
-
+//content of the website h stands for header
 
      this.bs.getH29().subscribe(d=>{
       this.blog=d,

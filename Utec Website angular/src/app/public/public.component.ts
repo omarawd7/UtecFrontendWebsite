@@ -15,12 +15,11 @@ gsap.registerPlugin(ScrollTrigger);
 
 })
 export class PublicComponent implements OnInit {
-  images = ['../assets/indust.png', '../assets/infra.png', '../assets/indust.png'];
 
   msg:any ;
   blog:any;
   btitle:any;
-  h1:any;
+  h1:any;//content of the website h stands for header
   h2:any;
   h3:any;
   h4:any;
@@ -110,15 +109,15 @@ constructor( private router: Router,private pService :MyServiceService ,private 
       localStorage.removeItem('foo')
     }
 
-    this.username = localStorage.getItem("CurrentUsername");
+    this.username = localStorage.getItem("CurrentUser");
     if(this.username){
-
      this.router.navigate(['/secure'])  .then(() => {
        window.location.reload();
      });
     }
 
   }
+  //mobile menu
   closeRightMenu(){
     (document.querySelector('#rightMenu') as HTMLElement).style.display = "none";
   }
@@ -138,407 +137,291 @@ constructor( private router: Router,private pService :MyServiceService ,private 
    }
 
    showBlog(){
-
+//content of the website h stands for header
     this.bs.getH1().subscribe(d=>{
      this.blog=d,
-     console.log(this.blog);
-     console.log('hello this is H1 content'+this?.blog?.BlogTitle);
     this.h1=this?.blog?.BlogContent;
     });
 
     this.bs.getH2().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h2=this?.blog?.BlogContent;
      });
 
     this.bs.getH3().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h3=this?.blog?.BlogContent;
      });
 
 
      this.bs.getH4().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H4 content'+this?.blog?.BlogContent);
      this.h4=this?.blog?.BlogContent;
      });
 
      this.bs.getH5().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h5=this?.blog?.BlogContent;
      });
 
      this.bs.getH6().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h6=this?.blog?.BlogContent;
      });
 
      this.bs.getH7().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h7=this?.blog?.BlogContent;
      });
 
      this.bs.getH8().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h8=this?.blog?.BlogContent;
      });
 
 
      this.bs.getH9().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h9=this?.blog?.BlogContent;
      });
 
      this.bs.getH10().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h10=this?.blog?.BlogContent;
      });
 
      this.bs.getH11().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h11=this?.blog?.BlogContent;
      });
 
      this.bs.getH12().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h12=this?.blog?.BlogContent;
      });
 
      this.bs.getH13().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h13=this?.blog?.BlogContent;
      });
 
      this.bs.getH14().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h14=this?.blog?.BlogContent;
      });
 
      this.bs.getH15().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h15=this?.blog?.BlogContent;
      });
 
      this.bs.getH16().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h16=this?.blog?.BlogContent;
      });
 
      this.bs.getH17().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h17=this?.blog?.BlogContent;
      });
 
      this.bs.getH18().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h18=this?.blog?.BlogContent;
      });
 
      this.bs.getH19().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h19=this?.blog?.BlogContent;
      });
 
      this.bs.getH20().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h20=this?.blog?.BlogContent;
      });
 
      this.bs.getH21().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h21=this?.blog?.BlogContent;
      });
 
      this.bs.getH22().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h22=this?.blog?.BlogContent;
      });
 
      this.bs.getH23().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h23=this?.blog?.BlogContent;
      });
 
      this.bs.getH24().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h24=this?.blog?.BlogContent;
      });
 
      this.bs.getH25().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h25=this?.blog?.BlogContent;
      });
      this.bs.getH26().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h26=this?.blog?.BlogContent;
      });
 
      this.bs.getH27().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h27=this?.blog?.BlogContent;
      });
 
 
      this.bs.getH28().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h28=this?.blog?.BlogContent;
      });
 
      this.bs.getH29().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h29=this?.blog?.BlogContent;
      });
 
 
      this.bs.getH30().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h30=this?.blog?.BlogContent;
      });
 
 
      this.bs.getH31().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h31=this?.blog?.BlogContent;
      });
 
      this.bs.getH32().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h32=this?.blog?.BlogContent;
      });
 
      this.bs.getH33().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h33=this?.blog?.BlogContent;
      });
 
      this.bs.getH34().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h34=this?.blog?.BlogContent;
      });
 
      this.bs.getH35().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h35=this?.blog?.BlogContent;
      });
      this.bs.getH58().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h58=this?.blog?.BlogContent;
      });
 
      this.bs.getH59().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h59=this?.blog?.BlogContent;
      });
 
      this.bs.getH60().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h60=this?.blog?.BlogContent;
      });
 
      this.bs.getH61().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h61=this?.blog?.BlogContent;
      });
      this.bs.getH62().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h62=this?.blog?.BlogContent;
      });
      this.bs.getH63().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h63=this?.blog?.BlogContent;
      });
      this.bs.getH64().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h64=this?.blog?.BlogContent;
      });
      this.bs.getH65().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h65=this?.blog?.BlogContent;
      });
      this.bs.getH66().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h66=this?.blog?.BlogContent;
      });
      this.bs.getH67().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h67=this?.blog?.BlogContent;
      });
 
      this.bs.getH68().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h68=this?.blog?.BlogContent;
      });
 
      this.bs.getH69().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h69=this?.blog?.BlogContent;
      });
 
      this.bs.getH70().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h70=this?.blog?.BlogContent;
      });
 
      this.bs.getH71().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h71=this?.blog?.BlogContent;
      });
      this.bs.getH72().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h72=this?.blog?.BlogContent;
      });
 
      this.bs.getH73().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h73=this?.blog?.BlogContent;
      });
 
      this.bs.getH74().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h74=this?.blog?.BlogContent;
      });
 
      this.bs.getH75().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h75=this?.blog?.BlogContent;
      });
 
 
      this.bs.getH76().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h76=this?.blog?.BlogContent;
      });
 
 
      this.bs.getH77().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h77=this?.blog?.BlogContent;
      });
 
      this.bs.getH78().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h78=this?.blog?.BlogContent;
      });
 
      this.bs.getH79().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h79=this?.blog?.BlogContent;
      });
      this.bs.getH80().subscribe(d=>{
       this.blog=d,
-      console.log(this.blog);
-      console.log('hello this is H1 content'+this?.blog?.BlogTitle);
      this.h80=this?.blog?.BlogContent;
      });
    }
@@ -546,8 +429,6 @@ constructor( private router: Router,private pService :MyServiceService ,private 
    showpop(){
     this.pu.getmassage().subscribe(d=>{
      this.popup=d,
-     console.log(this.popup);
-     console.log('hello this is blog content'+this?.popup?.BlogContent);
     this.popupContent=this?.popup?.BlogContent;
     });
    }
@@ -757,22 +638,4 @@ constructor( private router: Router,private pService :MyServiceService ,private 
 
 }
 
-/*
-video
-<div>
-  <video width="400" class="vid1" controls>
-    <source src="../assets/tst.mp4" type="video/mp4">
-  </video>
-</div>
-*/
-/*
-pop UP massage
-<section>
-  <div class="MainAlret" *ngIf="div1">
-    <span class="closebtn" (click)="closewin()">&times;</span>
-    <p><strong>&ensp;Warning!</strong> {{ popupContent }}</p>
-    <div><img src="../assets/utec logo.png"></div>
-  </div>
-</section>
 
-*/
